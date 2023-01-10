@@ -29,9 +29,9 @@ function getMelonsAtPrice(price) {
 let melon_lst = [];
 if(price in melon_prices) {
     for(let melon of Object.values(melon_prices[price])) {
-      melon_lst.push(melon);
+      melon_lst.sort();melon_lst.push(melon);
     }
-      return melon_lst;
+      return melon_lst.sort();;
   }
  return
 }
